@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="tudo">
+        <div id="rodape">
+            <div id="repete-rodape">
+                <div id="bloco-rodape">
+                    <div id="lad-esq-rodape">
+                        <div id="bloco-grande-esq"></div>
+                        <div id="bloco-medio-esq"></div>
+                        <div id="tres-blocos">
+                            <div id="bloco-pequeno-esq-1"></div>
+                            <div id="bloco-quadrado-esq-1"></div>
+                            <div id="bloco-quadrado-esq-2"></div>
+                        </div>
+                    </div>
+                    <div id="lad-dir-rodape">
+                        <div id="bloco-grande-dir"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
