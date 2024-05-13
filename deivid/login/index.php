@@ -24,7 +24,9 @@
 						<div id="conteudo-login">
 							<form method="post">
 								<div id="bloco-texto">
+									<label for=""></label>
 									<input type="text" name="nome" placeholder=" Nome" id="nome-login">
+									<label for=""></label>
 									<input type="password"name="senha" placeholder=" Senha" id="senha-login">
 								</div>
 								<div id="bloco-botao">
