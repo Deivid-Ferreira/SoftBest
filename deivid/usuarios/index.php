@@ -73,16 +73,21 @@
 					</thead>
 					<tbody>
 <?php
-	$resultUsuario = $conn->query($sqlUsuario);
-	while($dadosUsuario = $resultUsuario->fetch_assoc()) {
-		echo "<tr>";
-		echo "<td>" . $dadosUsuario["nomeUsuario"] . "</td>";
-		echo "<td>" . $dadosUsuario["cpfUsuario"] . "</td>";
-		echo "<td>" . $dadosUsuario["celularUsuario"] . "</td>";
-		echo "<td>" . $dadosUsuario["emailUsuario"] . "</td>";
-		echo "<td>" . $dadosUsuario["senhaUsuario"] . "</td>";
-		echo "</tr>";
-	}
+	$sqlUsuarios = "SELECT nomeUsuario, cpfUsuario, celularUsuario, emailUsuario, senhaUsuario FROM usuarios";
+	$resultUsuarios = $conn->query($sqlUsuarios);
+	if ($resultUsuarios->num_rows > 0) {
+		while ($dadosUsuario = $resultUsuarios->fetch_assoc()) {
+	        	echo "<tr>";
+	                echo "<td>" . $dadosUsuario["nomeUsuario"] . "</td>";
+	                echo "<td>" . $dadosUsuario["cpfUsuario"] . "</td>";
+	                echo "<td>" . $dadosUsuario["celularUsuario"] . "</td>";
+	                echo "<td>" . $dadosUsuario["emailUsuario"] . "</td>";
+	                echo "<td>" . $dadosUsuario["senhaUsuario"] . "</td>";
+	                echo "</tr>";
+	        }
+	        }else {
+	        	echo "<tr><td colspan='5'>Nenhum usuário cadastrado.</td></tr>";
+	        }
 ?>
 					</tbody>
 				</table>
